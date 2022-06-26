@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="" name="text_1">
+	<p>kiem tra co bao nhieu nguyen am</p>
+	<script>
+	  function text_1(str1)
+	  {
+	  {
+		let text = 'aeiouAEIOU';
+		let newtext = 0;
+		for(let x = 0; x < str1.length - 1; x++)
+		{
+			if (text.indexOf(str1[x]) !== -1)
+				{
+					newtext += 1;
+				}
+		}
+		return newtext;
+		}
+		document.write(text_1());
+		}
+	</script>
+</body>
+</html>
