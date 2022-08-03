@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p>Tính tổng mảng </p>
+	<script>
+		function sumarray(mang){
+			let sum = 0;
+			for(let i = 0; i<mang.length; i++){
+				sum += mang[i];
+			}
+			return sum;
+		}
+		let mang = [3, 4, 6, 7];
+		document.write(sumarray(mang));
+	</script>
+	<p>Tính tổng mảng cách 2</p>
+	<script>
+		function sumarray_1(mang1){
+			let sum1 = 0;
+			let i = 0;
+			while(i<mang1.length){
+				sum1 += mang1[i];
+				i++;
+			}
+			return sum1;
+		}
+		let mang1 = [3, 4, 6, 7, 8, 9];
+		document.write(sumarray_1(mang1));
+	</script>
+	<p>Tính tổng mảng cách 3</p>
+	<script type="text/javascript">
+		let a = [3, 4, 6, 8, 9, 10];
+		let num = a.reduce(function(accumulator, element){
+			return accumulator + element;
+		}, 0);
+		document.write(num);
+	</script>
+</body>
+</html>
